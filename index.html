@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FENIGEN</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<link rel="shortcut icon" href="http://www.sssu.ru/favicon.ico" type="image/x-icon">
+	
+<script type="text/javascript" src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="index.css" >
+
+</head>
+<body>
+<div class="wrapper">
+<!--********************************************************************************************
+ШАПКА
+!********************************************************************************************-->
+  <div class="header">
+  	<div id="LHead">&nbsp</div>
+	<div id="CHead">
+
+<center><pre><hr>
+███──███──█──█──███──████──███──█──█
+█────█────██─█───█───█─────█────██─█
+███──███──█─██───█───█─██──███──█─██
+█────█────█──█───█───█──█──█────█──█
+█────███──█──█──███──████──███──█──█
+	 Why? just because I could
+
+</pre>
+<span id="pendule"></span>
+<script language="javascript" type="text/javascript">
+<!-- Begin
+function clock() {
+var digital = new Date();
+var hours = digital.getHours();
+var minutes = digital.getMinutes();
+var seconds = digital.getSeconds();
+var amOrPm = "AM";
+if (hours > 11) amOrPm = "PM";
+if (hours > 12) hours = hours - 12;
+if (hours == 0) hours = 12;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+dispTime = '<b>'+hours + ":" + minutes + ":" + seconds + " " + amOrPm+'</b>';
+document.getElementById('pendule').innerHTML = dispTime;
+setTimeout("clock()", 1000);
+}
+window.onload=clock;
+//  End -->
+</script>
+
+</center>
+
+	</div>
+	<div id="RHead">&nbsp</div>
+  </div>
+<!--********************************************************************************************
+МЕНЮ
+!********************************************************************************************-->
+  <div class="menu">
+  	<div id="LMenu">&nbsp</div>
+	<div id="CMenu">
+	<ul id="nav">
+		<li><a href="index.html #content">Главная</a></li>
+		<li><a href="Pages/sssu.html #moluch">Публикации</a></li>
+		<li><button onclick="chpok('cert')">Сертификаты </button></li>
+		<li><button onclick="chpok('soft')">Сертификаты ПО</button></li>
+<!--		<li><a href="contact.html #contact">Контакты</a></li>
+		<li><a href=" #about">About</a></li>-->
+	</ul></div>
+	<div id="RMenu">&nbsp</div>
+   </div>
+
+<div class="podmenu">
+	<div id="LpMenu">&nbsp</div>
+	<div id="CpMenu">
+	<div id="cert" style="display:none"><ul>
+		<lo> <a href="Pages/certifications.html #intuit">НОУ "Интуит"</a> </lo>
+		<lo> <a href="Pages/certifications.html #mgtu">Специалист.RU</a> </lo>
+		<lo> <a href="Pages/certifications.html #stepik">stepik.org</a> </lo>
+		<lo> <button class="ex" onclick="chpok('cls')">Close</button> </lo>
+	</ul></div>
+	<div id="soft" style="display:none"><ul>
+		<lo> <a href="Pages/soft.html #Web">dr.WEB</a> </lo>
+		<lo> <button class="ex" onclick="chpok('cls')">Close</button> </lo>
+	</ul></div>
+</div>
+<div id="RpMenu">&nbsp</div>
+</div>
+<!--********************************************************************************************
+ОСНОВНОЕ ПОЛЕ
+!********************************************************************************************-->
+  <div class="main">
+    <div id="LBox">&nbsp</div>
+    <div id="content">
+Приветствую Вас на своей странице.<br>
+--allow-file-access-from-files file<br>
+<IMG style="display: block; margin-left: auto; margin-right: auto; text-align: center;" src="http://www.stud.sssu.ru/img/dgtu.jpg" alt="Заставка" width="100%">
+	</div>
+    <div id="RBox">&nbsp</div>
+  </div>
+<!--********************************************************************************************
+ПОДВАЛ
+!********************************************************************************************-->
+  <div class="footer">
+    <div id="LFoot">&nbsp</div>
+	<div id="CFoot"><center>
+<!-- Блок поделиться ссылкой https://yandex.ru/dev/share/ //-->
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="collections,vkontakte,facebook,twitter,linkedin,viber,whatsapp,skype,telegram" data-size="s"></div>
+<br>
+<pre>Powered by <b>fenigen</b><br><b><i>2019 год</i></b><br>&nbsp</pre></center>
+	</div>
+	<div id="RFoot"><center><br><br>
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=55857400&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/55857400/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="55857400" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer --></center>
+	</div>
+  </div>
+</div>
+<!--********************************************************************************************
+КОНТЕНТ
+!********************************************************************************************-->
+
+<div hidden>
+<div id="index">&nbsp</div>
+<div id="contact">&nbsp</div>
+<div id="about">
+<p>Данный сайт создан в качестве эксперемента, по принципу однастраничного, при этом разбавив его дополнительным функционалом. Основой идею послужила псевдоCMS JSCMS - v0.3 <a href="http://jscms.sourceforge.net/" target="_blank">JSCMS - v0.3</a> удовлетворяющая поставленным требованиям, но крайне не удобная в части управления (редактирования кода). Что было выявленно в первой версии сайта.</p>
+<p>В связи с этим возникла идея переписать код, наследуя идеи, но позволяющий более удобно редактировать информацию. Основой для реализации стал код опубликованный в статье <a href="https://webformyself.com/kak-dinamicheski-zagruzhat-i-animirovat-zagruzku-soderzhimogo-s-pomoshhyu-jquery/" target="_blank">Динамическая загрузка контента через jQuery</a></p>
+<p>Поскольку для работы требуется jQuery берем в <a href="https://developers.google.com/speed/libraries/#jquery" target="_blank">Google Hosted Libraries</a> или <a href="https://tech.yandex.ru/jslibs/#jquery" target="_blank">у Яндекса для разработчиков</a>, что и было сделано.<br>
+В качестве макета использовались материалы статьи в HTML Academy <a href="https://htmlacademy.ru/blog/useful/css/display-table-anti-hero" target="_blank">Антигерой CSS-разметки — свойство «display: table»</a></p>
+<p>Ну а отличная идея для меню <a href="http://htmlbook.ru/faq/kak-sdelat-gorizontalnoe-menyu-s-naklonom" target="_blank">Как сделать горизонтальное меню с наклоном? 
+</a></p>
+Встраиваем шрифты с <a href="https://fonts.google.com/" target="_blank">Google Fronts.
+</a>
+
+ </div>
+<div id="certifications">Сертификаты</div>
+
+
+</div>
+
+
+</body>
+</html>

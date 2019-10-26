@@ -1,0 +1,222 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swap&subset=cyrillic');
+/* Basic Style*/
+* { 
+	margin:0; 
+	padding:0;
+}
+html, body { 
+	height: 100%; 
+}
+body {
+  background: #fff;
+  color: black;
+}
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+/* HEADER Style*/
+.header {
+  display: table-row;
+  width: 100%;
+  height: 10px;
+  color: #fde910;
+  font-size: 14px;
+  
+}
+#CHead {
+  display: table-cell;
+  background: linear-gradient(to top, #004953, #000000);
+}
+#LHead{
+	display: table-cell;
+	width: 15%;	
+	background: linear-gradient(90deg, #004953, #fff);
+}
+#RHead{
+	display: table-cell;
+	width: 15%;
+	background: linear-gradient(to left, #004953, #fff);
+}
+
+/* MAIN Style*/
+.main {
+  height: 100%;
+  display: table-row;
+  width: 100%;
+  text-align: left;
+  font-size: 22px;
+}
+#content {
+  display: table-cell;
+}
+#LBox{
+	display: table-cell;
+	width: 15%;
+	background: linear-gradient(to right, #004953, #fff);
+}
+#RBox{
+	display: table-cell;
+	width: 15%;
+	background: linear-gradient(to left, #004953, #fff);
+}
+
+/* FOOTER Style*/
+.footer {
+  display: table-row;
+  width: 100%;
+  height:10px;
+  color: #fde910;
+  font-size: 16px;
+}
+#CFoot {
+  display: table-cell;
+  background: linear-gradient(to top, #000, #004953, #fff);
+}
+#LFoot{
+	display: table-cell;
+	width: 15%;
+	background: linear-gradient(90deg, #004953, #fff);
+}
+#RFoot{
+	display: table-cell;
+	width: 15%;
+	background: linear-gradient(to left, #004953, #fff);
+}
+
+/* MENU Style*/
+/* Элемент */
+.menu {
+  display: table-row;
+  width: 100%;
+  height:10px;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+}
+#CMenu {
+  display: table-cell;
+  background: linear-gradient(to top, #fff, #004953);
+}
+#LMenu{
+   display: table-cell;
+   width: 15%;
+   background: linear-gradient(to right, #004953, #fff);
+}
+#RMenu{
+	display: table-cell;
+	width: 15%;
+	background: linear-gradient(to left, #004953, #fff);
+}
+#nav li {
+   display: inline-block;
+   background: #004953;
+   margin-right: 10px;
+   transform: skewX(-30deg);
+   margin: 0px auto 0px auto;
+}
+#nav li a {
+   color: #fde910;
+   display: block;
+   padding: 5px 15px;
+   text-decoration: none;
+   transform: skewX(30deg);
+   transform: skew(0deg);
+   margin: auto;
+   width: 100px;
+   box-shadow: 2px 2px #000;   
+}
+#nav li a:hover {
+   background: #004953;
+   transform: skewX(-11deg);
+   margin: auto;
+}
+
+#nav button {
+   background: #004953;
+   padding: 5px 15px;
+   color: #fde910;
+   font-size: 16px;
+   font-family: 'Ubuntu', sans-serif;
+   width: auto;
+   border: 2px outset #004953;
+}
+
+.podmenu {
+  display: table-row;
+  width: 100%;
+  height:10px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+}
+#LpMenu {
+  display: table-cell;
+  background: linear-gradient(to right, #004953, #fff);
+}
+#CpMenu {
+  display: table-cell;
+}
+#RpMenu {
+  display: table-cell;
+  background: linear-gradient(to left, #004953, #fff);
+}
+
+/*Подменю*/
+.podmenu lo {
+   display: inline-block;
+   background: #004953;
+   margin-right: 10px;
+   transform: skewX(0deg);
+   margin: 0px auto 10px auto;
+}
+.podmenu lo a {
+   color: #fde910;
+   display: block;
+   padding: 5px 30px;
+   text-decoration: none;
+   transform: skewX(0deg);
+   margin: auto;
+   width: 100px;
+}
+.podmenu lo a:hover {
+   background: #004953;
+   transform: skewX(-30deg);
+   margin: auto;
+}
+
+
+/* Дополнительно */
+.ex {
+	color: #004953;
+	padding: 2px 15px;
+	background: #fde910;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+	transform: skewX(0deg);
+	border: 1px outset #fde910
+   
+}
+
+.fix{
+    position:fixed;
+    top: 30px;
+    left:140px;
+}
+.not_fix{
+    position: absolute;
+    top: 120px;
+    left:100px;
+}
+
+
+.lefttimg  {
+    float: left;
+    margin: auto;
+   }
+   
