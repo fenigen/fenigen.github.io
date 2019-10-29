@@ -16,7 +16,7 @@ $(document).ready(function() {
 		var toLoad = $(this).attr('href');
 		$('#content').hide('fast',loadContent);
 		$('#load').remove();
-		$('#wrapper').append('<span id="load">LOADING...</span>');
+		$('#wrapper').append('<span id="load"><div class="loading-wrap"><div class="triangle1"></div> <div class="triangle2"></div><div class="triangle3"></div></span>');
 		$('#load').fadeIn('normal');
 		/*
 		window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
@@ -48,7 +48,7 @@ $(document).ready(function() {
 		var toLoad = $(this).attr('href');
 		$('#content').hide('fast',loadContent);
 		$('#load').remove();
-		$('#wrapper').append('<span id="load">LOADING...</span>');
+		$('#wrapper').append('<span id="load"><div class="loading-wrap"><div class="triangle1"></div> <div class="triangle2"></div><div class="triangle3"></div></span>');
 		$('#load').fadeIn('normal');
 		/*
 		window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
@@ -79,7 +79,7 @@ $(document).ready(function() {
 		var toLoad = $(this).attr('href');
 		$('#content').hide('fast',loadContent);
 		$('#load').remove();
-		$('#wrapper').append('<span id="load">LOADING...</span>');
+		$('#wrapper').append('<span id="load"><div class="loading-wrap"><div class="triangle1"></div> <div class="triangle2"></div><div class="triangle3"></div></span>');
 		$('#load').fadeIn('normal');
 		/*
 		window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
